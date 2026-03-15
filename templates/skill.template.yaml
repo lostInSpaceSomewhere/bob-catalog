@@ -1,0 +1,15 @@
+id: example-skill-id
+name: Example Skill
+description: Clear user-facing description of what this skill does.
+permissions:
+  - network:oauth:google
+inputs:
+  query: Search term or task input
+tags:
+  - official
+  - example
+steps:
+  - type: prompt
+    template: |
+      Execute this request with the provided input:
+      {{query}}

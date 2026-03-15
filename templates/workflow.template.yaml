@@ -1,0 +1,18 @@
+id: example-workflow-id
+name: Example Workflow
+description: Clear workflow description and side effects.
+permissions:
+  - network:oauth:google
+  - integration:write:google
+trigger:
+  type: manual
+trusted_step_types: []
+steps:
+  - type: integration
+    provider: google
+    action: gmail_send
+    write: true
+    input:
+      to: someone@example.com
+      subject: Subject
+      body: Hello from Bob.

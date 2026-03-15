@@ -1,0 +1,12 @@
+id: official-healthcheck
+name: Official Healthcheck
+description: Verifies that the Bob official catalog is connected and usable.
+permissions: []
+inputs: {}
+tags:
+  - official
+  - diagnostics
+steps:
+  - type: prompt
+    template: |
+      Confirm the Bob official catalog is connected and operational.

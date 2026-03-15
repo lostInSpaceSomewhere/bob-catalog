@@ -1,0 +1,18 @@
+id: example-agent-id
+name: Example Agent
+description: Agent role for connector-assisted tasks.
+slash_command: connector
+tools:
+  - llm_call
+  - integration_call
+system_prompt: |
+  You are a connector-focused assistant. Use integration_call carefully and prefer least privilege.
+model_override: null
+budget:
+  max_steps: 20
+  max_llm_calls: 10
+  max_runtime_secs: 180
+  max_depth: 2
+tags:
+  - official
+  - connector

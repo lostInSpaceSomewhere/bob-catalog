@@ -1,0 +1,16 @@
+{
+  "catalog_version": "1.0",
+  "name": "Bob Official Catalog",
+  "items": [
+    {
+      "id": "official-healthcheck",
+      "type": "skill",
+      "name": "Official Healthcheck",
+      "description": "Minimal first-party skill to verify catalog load and execution.",
+      "version": "0.1.0",
+      "manifest_path": "skills/official-healthcheck.yaml",
+      "permissions": [],
+      "git_sha": "bootstrap"
+    }
+  ]
+}
