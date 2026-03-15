@@ -11,6 +11,81 @@
       "manifest_path": "skills/official-healthcheck.yaml",
       "permissions": [],
       "git_sha": "bootstrap"
+    },
+    {
+      "id": "google-gmail-search",
+      "type": "skill",
+      "name": "Google Gmail Search",
+      "description": "Search Gmail messages through the connected Google account.",
+      "version": "0.1.0",
+      "manifest_path": "skills/google-gmail-search.yaml",
+      "permissions": [
+        "network:oauth:google"
+      ],
+      "git_sha": "m2-bootstrap"
+    },
+    {
+      "id": "google-gmail-send",
+      "type": "skill",
+      "name": "Google Gmail Send",
+      "description": "Send Gmail messages through the connected Google account.",
+      "version": "0.1.0",
+      "manifest_path": "skills/google-gmail-send.yaml",
+      "permissions": [
+        "network:oauth:google",
+        "integration:write:google"
+      ],
+      "git_sha": "m2-bootstrap"
+    },
+    {
+      "id": "google-calendar-list-events",
+      "type": "skill",
+      "name": "Google Calendar List Events",
+      "description": "List calendar events from the connected Google account.",
+      "version": "0.1.0",
+      "manifest_path": "skills/google-calendar-list-events.yaml",
+      "permissions": [
+        "network:oauth:google"
+      ],
+      "git_sha": "m2-bootstrap"
+    },
+    {
+      "id": "google-calendar-create-event",
+      "type": "skill",
+      "name": "Google Calendar Create Event",
+      "description": "Create calendar events in the connected Google account.",
+      "version": "0.1.0",
+      "manifest_path": "skills/google-calendar-create-event.yaml",
+      "permissions": [
+        "network:oauth:google",
+        "integration:write:google"
+      ],
+      "git_sha": "m2-bootstrap"
+    },
+    {
+      "id": "google-drive-list-files",
+      "type": "skill",
+      "name": "Google Drive List Files",
+      "description": "List files from the connected Google Drive account.",
+      "version": "0.1.0",
+      "manifest_path": "skills/google-drive-list-files.yaml",
+      "permissions": [
+        "network:oauth:google"
+      ],
+      "git_sha": "m2-bootstrap"
+    },
+    {
+      "id": "google-drive-write-file",
+      "type": "skill",
+      "name": "Google Drive Write File",
+      "description": "Create or modify files in the connected Google Drive account.",
+      "version": "0.1.0",
+      "manifest_path": "skills/google-drive-write-file.yaml",
+      "permissions": [
+        "network:oauth:google",
+        "integration:write:google"
+      ],
+      "git_sha": "m2-bootstrap"
     }
   ]
 }

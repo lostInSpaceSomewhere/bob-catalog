@@ -1,0 +1,17 @@
+id: google-gmail-search
+name: Google Gmail Search
+description: Search Gmail messages through the connected Google account.
+permissions:
+  - network:oauth:google
+inputs: {}
+tags:
+  - official
+  - google
+  - gmail
+  - read
+steps:
+  - type: integration
+    provider: google
+    action: gmail_search
+    write: false
+    input: {}

@@ -1,0 +1,18 @@
+id: google-calendar-create-event
+name: Google Calendar Create Event
+description: Create calendar events in the connected Google account.
+permissions:
+  - network:oauth:google
+  - integration:write:google
+inputs: {}
+tags:
+  - official
+  - google
+  - calendar
+  - write
+steps:
+  - type: integration
+    provider: google
+    action: calendar_create_event
+    write: true
+    input: {}

@@ -1,0 +1,18 @@
+id: google-gmail-send
+name: Google Gmail Send
+description: Send Gmail messages through the connected Google account.
+permissions:
+  - network:oauth:google
+  - integration:write:google
+inputs: {}
+tags:
+  - official
+  - google
+  - gmail
+  - write
+steps:
+  - type: integration
+    provider: google
+    action: gmail_send
+    write: true
+    input: {}

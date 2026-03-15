@@ -1,0 +1,17 @@
+id: google-drive-list-files
+name: Google Drive List Files
+description: List files from the connected Google Drive account.
+permissions:
+  - network:oauth:google
+inputs: {}
+tags:
+  - official
+  - google
+  - drive
+  - read
+steps:
+  - type: integration
+    provider: google
+    action: drive_list_files
+    write: false
+    input: {}

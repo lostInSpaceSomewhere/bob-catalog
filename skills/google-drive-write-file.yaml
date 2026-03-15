@@ -1,0 +1,18 @@
+id: google-drive-write-file
+name: Google Drive Write File
+description: Create or modify files in the connected Google Drive account.
+permissions:
+  - network:oauth:google
+  - integration:write:google
+inputs: {}
+tags:
+  - official
+  - google
+  - drive
+  - write
+steps:
+  - type: integration
+    provider: google
+    action: drive_write_file
+    write: true
+    input: {}

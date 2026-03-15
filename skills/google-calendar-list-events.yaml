@@ -1,0 +1,17 @@
+id: google-calendar-list-events
+name: Google Calendar List Events
+description: List calendar events from the connected Google account.
+permissions:
+  - network:oauth:google
+inputs: {}
+tags:
+  - official
+  - google
+  - calendar
+  - read
+steps:
+  - type: integration
+    provider: google
+    action: calendar_list_events
+    write: false
+    input: {}
